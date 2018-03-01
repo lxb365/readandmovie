@@ -1,0 +1,12 @@
+<import src='post-item/post-item-template.wxml' />
+<view>
+  <swiper indicator-dots='true' interval='5000' autoplay='true'>
+    <swiper-item><image src='../../image/wx.png' /></swiper-item>
+    <swiper-item><image src='../../image/iqiyi.png'/></swiper-item>
+    <swiper-item><image src='../../image/vr.png' /></swiper-item>
+  </swiper>
+    
+  <block wx:for="{{postList}}" >     
+      <template is='post-item' data='{{...item}}'/>    
+  </block>
+</view>

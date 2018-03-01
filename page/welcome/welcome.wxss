@@ -1,0 +1,35 @@
+.wholeView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+}
+.container-pic1{
+  margin-top:160rpx;
+  width: 200rpx;
+  height: 200rpx;
+}
+.moto1 {
+  margin-top:100rpx;
+  color: #405f80;
+  font-weight: bold;
+  font-size: 32rpx;
+}
+
+.container-text {
+  margin-top: 200rpx;
+  width: 200rpx;
+  height: 80rpx;
+  border-radius: 10rpx;
+  border: 2rpx solid #405f80;
+  text-align: center;
+}
+.moto2 {
+  color: #405f80;
+  font-weight: bold;
+  line-height: 80rpx;
+  font-size: 22rpx;
+}
+page{
+  background-color: #b3d4db;
+}

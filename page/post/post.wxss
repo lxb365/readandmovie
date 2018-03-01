@@ -1,0 +1,15 @@
+@import "post-item/post-item-template.wxss"
+
+swiper{
+  width: 750rpx;
+  height: 600rpx;
+}
+
+swiper image{
+  width: 750rpx;
+  height: 600rpx;
+}
+
+page{
+  background-color:#D9D9D9;
+}

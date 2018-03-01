@@ -1,0 +1,19 @@
+<view class="detailContainer">
+  <image class="Detailpic" src="{{postDetail.headImgSrc}}"></image>
+  <image catchtap="onMusicStart" class="DetailMusicpic" src="{{ifMusicStarted ? '/image/music/music-stop.png' : '/image/music/music-start.png'}}"></image>
+  <view class="author">
+    <image class="authorAvatar" src="{{postDetail.avatar}}"></image>
+    <text class="authorName">{{postDetail.author}}</text>
+    <text class="authorPublish">发表于</text>
+    <text class="authorDate">{{postDetail.date}}</text>
+  </view>
+  <text class="detailTitle">{{postDetail.title}}</text>
+  <view class="tool">
+    <view class="detailshare">
+      <image catchtap="onCollectBlog" class="detailsharePic" src="{{ifCollected ? '/image/icon/collection.png' : '/image/icon/collection-anti.png'}}"></image>
+      <image catchtap="onShareBlog" class="detailsharePic" src="/image/icon/share.png"></image>
+    </view>
+    <view class="horizon"></view>
+  </view>
+  <text class="detailcontent">{{postDetail.detail}}</text>
+</view>

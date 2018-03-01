@@ -1,0 +1,17 @@
+<template name='post-item' >
+  <view class="postcontent" data-id="{{postId}}" catchtap='onPostTap'>
+     <view class="post-author-date">
+      <image class="avatar" src='{{avatar}}'/>
+      <text class="editdate">{{date}}</text>
+    </view>
+    <text class="title">{{title}}</text>
+    <image class="postpic" src='{{imgSrc}}'/>
+    <view class="postdiscribe"><text>{{content}}</text></view>
+    <view class="like">
+      <image class="likepic" src='/image/icon/chat.png' />
+      <text class="likeedit">{{reading}}</text>
+      <image class="likepic" src='/image/icon/view.png' />
+      <text class="likeedit">{{collection}}</text>
+    </view> 
+  </view>
+</template>

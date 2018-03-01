@@ -1,0 +1,7 @@
+<view class="wholeView">
+  <image class="container-pic1" src="../../image/avatar/1.png"></image>
+  <text class="moto1">Hello, 龙洲旭</text>
+  <view class="container-text" bindtap='OnTap'>
+    <text class="moto2">开启小程序之旅</text>
+  </view>
+</view>
