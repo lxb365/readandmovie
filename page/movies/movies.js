@@ -13,14 +13,21 @@ Page({
   onLoad: function (options) {
     var that = this;
     wx.request({
-      url: 'https://api.douban.com/v2/movie/us_box',
+      url: 'http://t.yushu.im/v2/movie/in_theaters',
       success:function(event){
         console.log(event)
       }
     });
 
     wx.request({
-      url: 'https://api.douban.com/v2/movie/top250',
+      url: 'http://t.yushu.im/v2/movie/coming_soon',
+      success: function (event) {
+        console.log(event)
+      }
+    });
+
+    wx.request({
+      url: 'http://t.yushu.im/v2/movie/top250',
       success: function (event) {
         console.log(event)
       }
