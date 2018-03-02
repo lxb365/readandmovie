@@ -1,13 +1,7 @@
 <import src="movie-list/movie-list.wxml" />
 
-<view class="container" wx:if="{{containerShow}}">
-  <view class="movies-template">
-    <template is="movieListTemplate" data="{{...inTheaters}}" />
-  </view>
-  <view class="movies-template">
-    <template is="movieListTemplate" data="{{...comingSoon}}" />
-  </view>
-  <view class="movies-template">
-    <template is="movieListTemplate" data="{{...top250}}"/>
-  </view>
-</view>
+<block wx:for="{{movieData}}" wx:key="catogray">
+  <template is="movieListTemplate" data="{{...item}}" />
+</block>
+ 
+
