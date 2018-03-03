@@ -1,7 +1,6 @@
-<import src="movie-list/movie-list.wxml" />
+ <import src="movie-list/movie-list.wxml" />
 
 <block wx:for="{{movieData}}" wx:key="catogray">
   <template is="movieListTemplate" data="{{...item}}" />
-</block>
+</block> 
  
-

@@ -1,0 +1,4 @@
+<!--page/musics/musics.wxml-->
+<view catchtap='onTopList'>
+  排行榜数据
+</view>

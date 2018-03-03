@@ -1,0 +1,12 @@
+ @import "../toplist/toplist-template.wxss"; 
+
+ page{
+  background-color:#D9D9D9;
+}
+
+.listTitle{
+  text-align: center;
+  letter-spacing: 5rpx;
+  font-size: 36rpx;
+  margin: 30rpx 0rpx;
+}

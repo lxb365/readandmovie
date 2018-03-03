@@ -15,10 +15,11 @@
   font-size: 28rpx;
 }
 
-.movie-head {
+.movie-header {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  border: 1px solid black;
+
 }
 
 .arrow {
@@ -31,4 +32,5 @@
 .movies-container{
     display:flex;
     flex-direction: row;
+    justify-content:space-between;
 }

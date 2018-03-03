@@ -1,0 +1,6 @@
+<template name="singlemusicname">
+  <view class="sinlgemusicContainer">
+    <text>最美的等待</text>
+    <text>周笔畅</text>
+  </view>
+</template>

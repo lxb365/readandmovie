@@ -1,0 +1,6 @@
+<template name="topListDetail">
+  <view>
+    <image></image>
+    
+  </view>
+</template>

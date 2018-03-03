@@ -1,0 +1,16 @@
+<!--page/musics/toplist/toplist.wxml-->
+<template name="topList">
+<view class="topListContainer">  
+  <image class="topPic" src="{{picUrl}}"></image>
+    
+  <view class="topContent">
+    <block wx:for="{{songList}}" wx:for-item="song" wx:for-index="idx">
+      <text>{{idx+1}} {{song}}</text>
+    </block>
+  </view>
+    
+  <view class="morePic">
+    <image src="/image/icon/arrow-right.png"></image>
+  </view>
+</view>
+</template>

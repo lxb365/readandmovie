@@ -4,8 +4,8 @@
     <view class="inner-container">     
       <text>{{catogray}}</text>
       <view class="movie-header">       
-        <text>更多</text>
-        <image class="arrow" src="/image/icon/arrow-right.png"></image>   
+        <view><text>更多</text></view>
+        <view><image class="arrow" src="/image/icon/arrow-right.png"></image></view>  
       </view>    
     </view>
     <view class="movies-container">

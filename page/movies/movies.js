@@ -29,16 +29,34 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this;
-    var urlPath = this.data.urlpath;
-    for (let idx in urlPath) {
-      wx.request({
-        url: urlPath[idx] + "?start=0&count=3",
-        success: function (event) {      
-          that.saveData(event.data.subjects, event.data.total);
-        }
-      });
-    }
+    // var that = this;
+    // var urlPath = this.data.urlpath;
+    // for (let idx in urlPath) {
+    //   wx.request({
+    //     url: urlPath[idx] + "?start=0&count=3",
+    //     success: function (event) {   
+    //       console.log(event);   
+    //       that.saveData(event.data.subjects, event.data.total);
+    //     }
+    //   });
+    // // }
+    // wx.request({
+    //   url: 'https://c.y.qq.com/qzone/fcg-bin/fcg_ucc_getcdinfo_byids_cp.fcg',
+    //   data: {
+    //     g_tk: 5381,
+    //     uin: 0,
+    //     format: 'json',
+    //     inCharset: 'utf-8',
+    //     outCharset: 'utf-8',   
+    //   },
+    //   method: 'GET',
+    //   header: { 'content-Type': 'application/json' }, 
+      
+    //   success: function (event) {  
+    //     console.log(event);
+    //   }
+    // });
+    
   },
 
   saveData: function (subjects,total) {
@@ -72,11 +90,11 @@ Page({
         tempMovieList[1].movieList = tempMovieData;
         break;
     }
-    console.log(tempMovieList);
+   
     
     this.setData({
       movieData: tempMovieList
     })
-    console.log(this.data.movieData);
+    
   }
 })

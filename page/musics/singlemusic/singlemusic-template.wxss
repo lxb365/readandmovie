@@ -1,0 +1,8 @@
+.sinlgemusicContainer{
+  display: flex;
+  justify-content: space-around;
+}
+
+.sinlgemusicContainer text{
+  font-size: 30rpx;
+}

@@ -1,10 +1,12 @@
 <template name="starTemplate">
   <view class="star-container"> 
-    <image src="/image/icon/star.png"></image>
-    <image src="/image/icon/star.png"></image>
-    <image src="/image/icon/star.png"></image>
-    <image src="/image/icon/star.png"></image>
-    <image src="/image/icon/star.png"></image>    
-    <text>{{rating}}</text>
+    <view>
+      <image src="/image/icon/star.png"></image>
+      <image src="/image/icon/star.png"></image>
+      <image src="/image/icon/star.png"></image>
+      <image src="/image/icon/star.png"></image>
+      <image src="/image/icon/star.png"></image>    
+    </view>
+    <view><text>{{rating}}</text></view>
   </view>
 </template>

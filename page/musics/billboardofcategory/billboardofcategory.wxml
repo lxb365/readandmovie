@@ -1,0 +1,4 @@
+<import src="../singlemusic/singlemusic-template.wxml" />
+
+<template is="singlemusicname"/>
+
