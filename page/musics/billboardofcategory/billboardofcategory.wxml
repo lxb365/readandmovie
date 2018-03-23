@@ -1,4 +1,9 @@
 <import src="../singlemusic/singlemusic-template.wxml" />
-
+<view class="billboardofcategoryContainer"> 
+  <view class="TitlePicContainer" >
+    <image src="{{topListInfo.topinfo.pic_v12}}"></image> 
+  </view>
+  
+</view>
 <template is="singlemusicname"/>
 

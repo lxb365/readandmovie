@@ -15,35 +15,11 @@ Page({
   onLoad: function (options) {
     var that = this;
     toplistApi.getToplist(function (data) {
-      
-      for (let idx in data){
-        var tempInfo = {};        
-        tempInfo.id = data[idx].id;
-        tempInfo.listenCount = data[idx].listenCount;
-        tempInfo.picUrl = data[idx].picUrl;
-        var cuttedName = [];
-        for (let i in data[idx].songList){
-          cuttedName[i] = data[idx].songList[i].songname + ' - ' + data[idx].songList[i].singername;
-
-          if (cuttedName[i].length > 16){
-            cuttedName[i] = cuttedName[i].substring(0,16)+'..';
-          }
-          console.log(cuttedName[i]);
-        }
-        tempInfo.songList = cuttedName;
-        tempInfo.topTitle = data[idx].topTitle
-        var tempInfoList = that.data.topListInfo;
-        tempInfoList.push(tempInfo);
-
-        that.setData({
-          topListInfo: tempInfoList
-        })
-        
-      }
-        
-    });
+      that.setData({
+        topListInfo: data
+      })      
+    });    
   },
-
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -94,9 +70,11 @@ Page({
   
   },
 
-  onbillboard:function(){
+  onbillboard:function(event){
+    // console.log(event);
+
     wx.navigateTo({
-      url: '../billboardofcategory/billboardofcategory',
+      url: '../billboardofcategory/billboardofcategory?id=' + event.currentTarget.dataset.id,
     })
   }
 })

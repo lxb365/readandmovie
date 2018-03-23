@@ -1,1 +1,12 @@
  @import "../singlemusic/singlemusic-template.wxss"; 
+
+.TitlePicContainer {
+  background-color: black;
+  text-align: center;
+}
+
+.TitlePicContainer image{
+  width: 420rpx;
+  height: 400rpx;
+}
+

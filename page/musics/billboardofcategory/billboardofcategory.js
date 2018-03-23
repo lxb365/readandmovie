@@ -1,18 +1,24 @@
-// page/musics/billboardofcategory/billboardofcategory.js
+var toplistApi = require('../../../util/util.js');
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    topListInfo:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var that = this;
+    toplistApi.getToplistInfo(options.id,function (data) {
+      that.setData({
+        topListInfo: data
+      })
+      console.log(that.data.topListInfo);
+    });    
   },
 
   /**

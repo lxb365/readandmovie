@@ -11,15 +11,18 @@
   margin-right: 30rpx
 }
 
-.topContent{
+ .topContent{
   display: flex;
   flex-direction: column;
   width: 450rpx;
-}
+} 
 
-.topContent text{
+.topOneTopic{
   line-height: 70rpx;
   font-size: 32rpx;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  overflow:hidden;
 }
 
 .morePic image{

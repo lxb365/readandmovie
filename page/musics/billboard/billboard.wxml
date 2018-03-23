@@ -1,5 +1,5 @@
 <import src="../toplist/toplist-template.wxml" />
-<view catchtap='onbillboard'>
+<view>
   <view class="listTitle">QQ音乐巅峰榜</view>
   <block wx:for="{{topListInfo}}">
     <template is="topList" data="{{...item}}"/>

@@ -1,12 +1,12 @@
 <!--page/musics/toplist/toplist.wxml-->
 <template name="topList">
-<view class="topListContainer">  
+<view class="topListContainer" catchtap='onbillboard' data-id="{{id}}">  
   <image class="topPic" src="{{picUrl}}"></image>
     
   <view class="topContent">
-    <block wx:for="{{songList}}" wx:for-item="song" wx:for-index="idx">
-      <text>{{idx+1}} {{song}}</text>
-    </block>
+    <view class="topOneTopic" wx:for="{{songList}}">
+      {{index+1}} {{item.songname}} - {{item.singername}}
+    </view>
   </view>
     
   <view class="morePic">

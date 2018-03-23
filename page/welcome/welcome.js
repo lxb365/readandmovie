@@ -64,8 +64,28 @@ Page({
   },
 
   OnTap:function(){
-    wx:wx.switchTab({
-      url: '../post/post',
+    // wx:wx.switchTab({
+    //   url: '../post/post',
+    // })
+    wx.login({
+      success:function(res){
+        var code = res.code;
+        console.log('code');
+        console.log(code);
+        wx.request({
+          url: 'http://z.cn/api/v1/user/gettoken?XDEBUG_SESSION_START=17930',
+          data:{
+            code:code
+          },
+          method:'POST',
+          success:function(res){
+            console.log(res.data);
+          },
+          fail:function(res){
+            console.log(res.data);
+          }
+        })
+      }
     })
   }
 })
