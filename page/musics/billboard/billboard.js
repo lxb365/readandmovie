@@ -25,9 +25,9 @@ Page({
         for (let i in data[idx].songList){
           cuttedName[i] = data[idx].songList[i].songname + ' - ' + data[idx].songList[i].singername;
 
-          if (cuttedName[i].length > 16){
-            cuttedName[i] = cuttedName[i].substring(0,16)+'..';
-          }
+          // if (cuttedName[i].length > 16){
+          //   cuttedName[i] = cuttedName[i].substring(0,16)+'..';
+          // }
           console.log(cuttedName[i]);
         }
         tempInfo.songList = cuttedName;

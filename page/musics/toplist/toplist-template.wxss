@@ -20,6 +20,7 @@
 .topContent text{
   line-height: 70rpx;
   font-size: 32rpx;
+  text-overflow: ellipsis;
 }
 
 .morePic image{
